@@ -59,7 +59,7 @@ const lab = [
 
 export const ModernProjects = () => {
     return (
-        <div className="min-h-screen bg-white text-black pb-32 px-6">
+        <div className="min-h-screen bg-white text-black pb-32 px-4 sm:px-6 overflow-hidden w-full max-w-[100vw]">
             <div className="max-w-7xl mx-auto">
                 {/* Header */}
                 <div className="mb-32">

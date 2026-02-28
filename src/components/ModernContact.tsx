@@ -55,35 +55,35 @@ export const ModernContact = () => {
     };
 
     return (
-        <div className=" px-6 bg-white" id="contact">
-            <div className="max-w-7xl mx-auto">
-                <div className="flex flex-col lg:flex-row gap-20 items-stretch">
+        <div className="px-4 sm:px-6 bg-white overflow-hidden w-full max-w-[100vw] py-16 md:py-24" id="contact">
+            <div className="max-w-7xl mx-auto w-full">
+                <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-stretch">
                     {/* Header Info */}
                     <div className="flex-1">
-                        <span className="text-[10px] font-black uppercase tracking-[0.5em] text-gray-400 mb-8 block">Get an Estimate</span>
-                        <h2 className="text-6xl md:text-8xl font-black text-black mb-12 tracking-tighter leading-[0.9] uppercase">
-                            READY TO <br /> <span className="text-transparent bg-clip-text bg-gradient-to-br from-blue-400 to-indigo-600 drop-shadow-sm filter mt-2 md:mt-0">PAINT</span> SOMETHING?
+                        <span className="text-[10px] font-black uppercase tracking-[0.5em] text-gray-400 mb-6 md:mb-8 block">Get an Estimate</span>
+                        <h2 className="text-[clamp(3.5rem,12vw,6rem)] md:text-8xl w-full max-w-full break-words font-black text-black mb-8 md:mb-12 tracking-tighter leading-[0.9] uppercase">
+                            READY TO <br className="hidden sm:block" /> <span className="text-transparent bg-clip-text bg-gradient-to-br from-blue-400 to-indigo-600 drop-shadow-sm filter mt-2 md:mt-0">PAINT</span><br className="sm:hidden" /> SOMETHING?
                         </h2>
                         <p className="text-gray-400 text-xl font-light leading-relaxed max-w-md mb-16">
                             Bringing vibrant color to your walls with expert craftsmanship.
                             Let's discuss your perfect palette and get started.
                         </p>
 
-                        <div className="space-y-8">
-                            <a href="mailto:singhroshan@roshanenterprises.org" className="flex items-center gap-6 group w-fit">
-                                <div className="p-4 bg-black text-white rounded-2xl group-hover:scale-110 transition-transform">
-                                    <Mail size={24} />
+                        <div className="space-y-8 w-full max-w-full overflow-hidden">
+                            <a href="mailto:singhroshan@roshanenterprises.org" className="flex items-center gap-4 sm:gap-6 group w-full truncate">
+                                <div className="p-3 sm:p-4 bg-black text-white rounded-2xl group-hover:scale-110 transition-transform flex-shrink-0">
+                                    <Mail size={20} className="sm:w-6 sm:h-6" />
                                 </div>
-                                <div>
+                                <div className="min-w-0 pr-2">
                                     <p className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-1">Email Us</p>
-                                    <p className="text-xl font-black tracking-tight text-black group-hover:text-gray-500 transition-colors">singhroshan@roshanenterprises.org</p>
+                                    <p className="text-sm sm:text-lg md:text-xl font-black tracking-tight text-black group-hover:text-gray-500 transition-colors truncate w-full">singhroshan@roshanenterprises.org</p>
                                 </div>
                             </a>
                         </div>
                     </div>
 
                     {/* Form Block */}
-                    <div className="flex-1 bg-gray-50 border border-black/[0.03] rounded-[64px] p-10 md:p-16 shadow-[0_40px_100px_rgba(0,0,0,0.02)]">
+                    <div className="flex-1 w-full bg-gray-50 border border-black/[0.03] rounded-[32px] md:rounded-[64px] p-6 sm:p-10 md:p-16 shadow-[0_40px_100px_rgba(0,0,0,0.02)]">
                         {status === "success" ? (
                             <motion.div
                                 initial={{ opacity: 0, scale: 0.95 }}

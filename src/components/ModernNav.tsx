@@ -38,8 +38,8 @@ export const ModernNav = () => {
                     }
         `}>
                     {/* Logo */}
-                    <Link href="/" className="flex items-center gap-2 pl-4">
-                        <span className="font-bold text-xl tracking-tighter text-black uppercase">Painter</span><span className="font-bold text-xl tracking-tighter text-yellow-500 uppercase">G</span>
+                    <Link href="/" className="flex items-center gap-1 sm:gap-2 pl-2 sm:pl-4">
+                        <span className="font-bold text-lg sm:text-xl tracking-tighter text-black uppercase">Painter</span><span className="font-bold text-lg sm:text-xl tracking-tighter text-yellow-500 uppercase">G</span>
                     </Link>
 
                     {/* Desktop Nav */}
@@ -57,8 +57,8 @@ export const ModernNav = () => {
                     </div>
 
                     {/* Actions */}
-                    <div className="flex items-center gap-3 pr-2">
-                        <div className="hidden sm:flex items-center gap-2 mr-4">
+                    <div className="flex items-center gap-2 sm:gap-3 pr-2">
+                        <div className="hidden lg:flex items-center gap-2 mr-4">
                             <a href="https://github.com/ivpankaj" target="_blank" className="p-2 text-gray-400 hover:text-black transition-colors">
                                 <Github size={18} />
                             </a>
@@ -68,7 +68,7 @@ export const ModernNav = () => {
                         </div>
                         <Link
                             href="/contact"
-                            className="px-6 py-2.5 bg-black text-white text-xs font-black uppercase tracking-widest rounded-xl hover:bg-gray-800 transition-all shadow-xl shadow-black/10"
+                            className="hidden sm:inline-flex px-4 sm:px-6 py-2 sm:py-2.5 bg-black text-white text-[10px] sm:text-xs font-black uppercase tracking-widest rounded-xl hover:bg-gray-800 transition-all shadow-xl shadow-black/10"
                         >
                             Connect
                         </Link>

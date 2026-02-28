@@ -84,8 +84,8 @@ const bentoItems = [
 
 export const BentoSkills = () => {
     return (
-        <div className=" bg-white">
-            <div className="max-w-7xl mx-auto">
+        <div className="bg-white overflow-hidden w-full">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6">
                 <div className="mb-16 md:mb-24 flex flex-col items-center">
                     <span className="text-xs font-black uppercase tracking-[0.3em] text-gray-400 mb-4 px-4 py-1.5 border border-black/5 rounded-full">Our Expertise</span>
                     <h2 className="text-4xl md:text-8xl font-black text-black mb-6 md:mb-8 tracking-tighter text-center">ARTISTIC <span className="text-blue-500">VISION</span></h2>

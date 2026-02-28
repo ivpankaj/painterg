@@ -7,8 +7,8 @@ import logo from "../logo.png";
 
 export const ModernAbout = () => {
     return (
-        <div className="min-h-screen bg-white text-black pb-32 overflow-hidden">
-            <div className="max-w-7xl mx-auto px-6">
+        <div className="min-h-screen bg-white text-black pb-32 overflow-hidden w-full max-w-[100vw]">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6">
                 {/* Profile Architecture */}
                 <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-center mb-32 md:mb-60 mt-10 lg:mt-0">
                     <div className="flex-1 w-full max-w-sm lg:max-w-none">
