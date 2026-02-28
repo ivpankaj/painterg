@@ -60,23 +60,23 @@ export const ModernContact = () => {
                 <div className="flex flex-col lg:flex-row gap-20 items-stretch">
                     {/* Header Info */}
                     <div className="flex-1">
-                        <span className="text-[10px] font-black uppercase tracking-[0.5em] text-gray-400 mb-8 block">Project Initiation</span>
+                        <span className="text-[10px] font-black uppercase tracking-[0.5em] text-gray-400 mb-8 block">Get an Estimate</span>
                         <h2 className="text-6xl md:text-8xl font-black text-black mb-12 tracking-tighter leading-[0.9] uppercase">
-                            READY TO <br /> <span className="text-transparent bg-clip-text bg-gradient-to-br from-gray-200 to-gray-400 drop-shadow-sm filter mt-2 md:mt-0">BUILD</span> SOMETHING?
+                            READY TO <br /> <span className="text-transparent bg-clip-text bg-gradient-to-br from-blue-400 to-indigo-600 drop-shadow-sm filter mt-2 md:mt-0">PAINT</span> SOMETHING?
                         </h2>
                         <p className="text-gray-400 text-xl font-light leading-relaxed max-w-md mb-16">
-                            Initializing specialized protocols for high-capacity digital transformation.
-                            Let's sync up and deploy your vision.
+                            Bringing vibrant color to your walls with expert craftsmanship.
+                            Let's discuss your perfect palette and get started.
                         </p>
 
                         <div className="space-y-8">
-                            <a href="mailto:imvpankaj@gmail.com" className="flex items-center gap-6 group w-fit">
+                            <a href="mailto:singhroshan@roshanenterprises.org" className="flex items-center gap-6 group w-fit">
                                 <div className="p-4 bg-black text-white rounded-2xl group-hover:scale-110 transition-transform">
                                     <Mail size={24} />
                                 </div>
                                 <div>
-                                    <p className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-1">Electronic Mail</p>
-                                    <p className="text-xl font-black tracking-tight text-black group-hover:text-gray-500 transition-colors">imvpankaj@gmail.com</p>
+                                    <p className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-1">Email Us</p>
+                                    <p className="text-xl font-black tracking-tight text-black group-hover:text-gray-500 transition-colors">singhroshan@roshanenterprises.org</p>
                                 </div>
                             </a>
                         </div>
@@ -91,13 +91,13 @@ export const ModernContact = () => {
                                 className="text-center py-20"
                             >
                                 <CheckCircle className="text-black mx-auto mb-8" size={80} strokeWidth={1} />
-                                <h3 className="text-4xl font-black text-black mb-6 tracking-tighter uppercase">Sync Successful</h3>
-                                <p className="text-gray-500 text-lg mb-10 font-light">Data transmitted to core. Expect a response within 24 hours.</p>
+                                <h3 className="text-4xl font-black text-black mb-6 tracking-tighter uppercase">Message Sent</h3>
+                                <p className="text-gray-500 text-lg mb-10 font-light">We've received your inquiry and will contact you within 24 hours.</p>
                                 <button
                                     onClick={() => setStatus("idle")}
                                     className="text-black font-black uppercase tracking-widest text-xs border-b border-black pb-1"
                                 >
-                                    New Sync
+                                    Send Another
                                 </button>
                             </motion.div>
                         ) : (
@@ -106,24 +106,24 @@ export const ModernContact = () => {
                                     {status === "error" && (
                                         <div className="flex items-center gap-3 p-5 bg-red-50 border border-red-100 rounded-3xl text-red-600 text-sm font-black uppercase tracking-widest">
                                             <AlertCircle size={20} />
-                                            Protocol Failure
+                                            Submission Failure
                                         </div>
                                     )}
 
                                     <div className="space-y-4">
-                                        <label className="text-[10px] font-black text-gray-400 uppercase tracking-[3px] ml-1">Identity Node</label>
+                                        <label className="text-[10px] font-black text-gray-400 uppercase tracking-[3px] ml-1">Full Name</label>
                                         <input
                                             required
                                             suppressHydrationWarning
                                             type="text"
                                             value={formData.name}
                                             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                                            placeholder="Enter Identity"
+                                            placeholder="Enter Name"
                                             className="w-full bg-transparent border-b-2 border-black/5 px-0 py-4 text-black text-2xl font-medium placeholder:text-gray-200 focus:outline-none focus:border-black transition-colors"
                                         />
                                     </div>
                                     <div className="space-y-4">
-                                        <label className="text-[10px] font-black text-gray-400 uppercase tracking-[3px] ml-1">Virtual Coordinate</label>
+                                        <label className="text-[10px] font-black text-gray-400 uppercase tracking-[3px] ml-1">Email Address</label>
                                         <input
                                             required
                                             suppressHydrationWarning
@@ -135,14 +135,14 @@ export const ModernContact = () => {
                                         />
                                     </div>
                                     <div className="space-y-4">
-                                        <label className="text-[10px] font-black text-gray-400 uppercase tracking-[3px] ml-1">Request Data</label>
+                                        <label className="text-[10px] font-black text-gray-400 uppercase tracking-[3px] ml-1">Project Details</label>
                                         <textarea
                                             required
                                             suppressHydrationWarning
                                             rows={3}
                                             value={formData.message}
                                             onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                                            placeholder="Initialize Message..."
+                                            placeholder="Describe your painting needs..."
                                             className="w-full bg-transparent border-b-2 border-black/5 px-0 py-4 text-black text-2xl font-medium placeholder:text-gray-200 focus:outline-none focus:border-black transition-colors resize-none"
                                         />
                                     </div>
@@ -152,9 +152,9 @@ export const ModernContact = () => {
                                         disabled={status === "loading"}
                                         className={`w-full bg-black text-white font-black py-8 rounded-[32px] flex items-center justify-center gap-3 transition-all hover:bg-gray-900 shadow-2xl shadow-black/10 uppercase tracking-[0.3em] text-xs ${status === "loading" ? "opacity-50 cursor-not-allowed" : ""}`}
                                     >
-                                        {status === "loading" ? "TRANSMITTING..." : (
+                                        {status === "loading" ? "SENDING..." : (
                                             <>
-                                                INITIALIZE SYNC <Send size={16} />
+                                                SEND MESSAGE <Send size={16} />
                                             </>
                                         )}
                                     </button>

@@ -5,12 +5,12 @@ export const metadata: Metadata = {
     description: "A comprehensive LMS platform developed by Pankaj Verma, featuring course management, student tracking, and interactive learning.",
     keywords: ["Learning Management System", "LMS Platform", "EdTech Solution", "Next.js LMS", "Full Stack Education App"],
     alternates: {
-        canonical: "https://ivpankaj.online/learning-management-system",
+        canonical: "https://painterg.cookmytech.site/learning-management-system",
     },
     openGraph: {
         title: "Learning Management System (LMS) | Pankaj Verma",
         description: "A comprehensive LMS platform developed by Pankaj Verma, featuring course management, student tracking, and interactive learning.",
-        url: "https://ivpankaj.online/learning-management-system",
+        url: "https://painterg.cookmytech.site/learning-management-system",
         images: [{ url: "/ivpankaj.png", width: 1200, height: 630, alt: "LMS Project" }],
     },
     twitter: {

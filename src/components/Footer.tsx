@@ -21,12 +21,11 @@ export function Footer() {
           {/* Logo & Vision */}
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center gap-3 mb-8 group">
-            
-              <span className="text-2xl font-black text-black tracking-tighter uppercase">Pankaj</span>
+              <span className="text-2xl font-black text-black tracking-tighter uppercase">Painter</span><span className="text-2xl font-black text-yellow-500 tracking-tighter uppercase">G</span>
             </Link>
             <p className="text-gray-500 text-lg font-light max-w-sm leading-relaxed mb-10">
-              Architecting the future of <span className="text-black font-semibold">autonomous digital</span> ecosystems.
-              Bridging the gap between raw data and human-centric intelligence.
+              Architecting the future of <span className="text-black font-semibold">vibrant living</span> and working spaces.
+              Bridging the gap between raw walls and human-centric art.
             </p>
             <div className="flex gap-4">
               {[
@@ -48,13 +47,13 @@ export function Footer() {
 
           {/* Navigation Matrix */}
           <div>
-            <h3 className="text-[11px] font-black text-black uppercase tracking-[0.3em] mb-10 border-b border-black w-fit pb-1">Protocols</h3>
+            <h3 className="text-[11px] font-black text-black uppercase tracking-[0.3em] mb-10 border-b border-black w-fit pb-1">Navigation</h3>
             <ul className="space-y-4">
               {[
-                { name: "Archive", href: "/projects", Icon: FolderOpen },
-                { name: "Bio-Sync", href: "/about", Icon: User },
+                { name: "Gallery", href: "/projects", Icon: FolderOpen },
+                { name: "About Us", href: "/about", Icon: User },
                 { name: "Services", href: "/services", Icon: Cpu },
-                { name: "Stack", href: "/stack", Icon: Activity },
+                { name: "Materials", href: "/stack", Icon: Activity },
               ].map((item) => (
                 <li key={item.name}>
                   <Link
@@ -84,7 +83,7 @@ export function Footer() {
                 </div>
               </div>
               <p className="text-[10px] font-black uppercase tracking-[0.2em] text-gray-400 text-center">
-                © {new Date().getFullYear()} Pankaj Verma // 2.4.0
+                © {new Date().getFullYear()} PainterG // 1.0.0
               </p>
             </div>
           </div>

@@ -5,12 +5,12 @@ export const metadata: Metadata = {
     description: "A real-time taxi booking application with driver matching, GPS tracking, and secure payments.",
     keywords: ["Taxi Booking App", "Ride Hailing Application", "Real-time GPS Tracking System", "Next.js Ride Sharing App"],
     alternates: {
-        canonical: "https://ivpankaj.online/taxi-booking-app",
+        canonical: "https://painterg.cookmytech.site/taxi-booking-app",
     },
     openGraph: {
         title: "Taxi Booking App | Pankaj Verma",
         description: "A real-time taxi booking application with driver matching, GPS tracking, and secure payments.",
-        url: "https://ivpankaj.online/taxi-booking-app",
+        url: "https://painterg.cookmytech.site/taxi-booking-app",
         images: [{ url: "/ivpankaj.png", width: 1200, height: 630, alt: "Taxi Booking App" }],
     },
     twitter: {

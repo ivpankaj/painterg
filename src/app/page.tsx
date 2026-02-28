@@ -8,22 +8,22 @@ import { WorkHighlight } from "@/components/WorkHighlight";
 import { ModernContact } from "@/components/ModernContact";
 
 export const metadata: Metadata = {
-  title: "Pankaj Verma | Modern Software Developer & Engineer",
-  description: "Experience the next level of digital craft. Portfolio of Pankaj Verma (ivpankaj), specializing in modern web architecture, AI, and premium user experiences.",
-  keywords: ["Pankaj Verma", "ivpankaj", "Modern Portfolio", "Tech Portfolio", "Full Stack Developer", "AI Engineer", "Software Developer Noida"],
+  title: "PainterG | Transform Your Spaces with Color",
+  description: "Experience the art of premium painting with PainterG. Specializing in residential, commercial, and artistic painting services.",
+  keywords: ["PainterG", "Painting Services", "House Painting", "Wall Textures", "Interior Design"],
   alternates: {
-    canonical: "https://ivpankaj.online/",
+    canonical: "https://painterg.cookmytech.site/",
   },
   openGraph: {
-    title: "Pankaj Verma | Modern Software Developer & Engineer",
-    description: "Experience the next level of digital craft. Portfolio of Pankaj Verma (ivpankaj), specializing in modern web architecture, AI, and premium user experiences.",
-    url: "https://ivpankaj.online/",
-    images: [{ url: "/ivpankaj.png", width: 1200, height: 630, alt: "Pankaj Verma - Portfolio" }],
+    title: "PainterG | Transform Your Spaces with Color",
+    description: "Experience the art of premium painting with PainterG. Specializing in residential, commercial, and artistic painting services.",
+    url: "https://painterg.cookmytech.site/",
+    images: [{ url: "/ivpankaj.png", width: 1200, height: 630, alt: "PainterG Header Art" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pankaj Verma | Modern Software Developer & Engineer",
-    description: "Experience the next level of digital craft. Portfolio of Pankaj Verma (ivpankaj).",
+    title: "PainterG | Transform Your Spaces with Color",
+    description: "Experience the art of premium painting with PainterG.",
     images: ["/ivpankaj.png"],
   },
 };

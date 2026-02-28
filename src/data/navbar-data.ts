@@ -1,43 +1,43 @@
   export const options = [
     { label: 'About', link: '/about' },
     { label: 'Services', link: '/services' },
-    { label: 'Contact', link: '/hire' },
+    { label: 'Gallery', link: '/projects' },
+    { label: 'Booking', link: '/contact' },
     { label: 'Testimonials', link: '/testimonials' },
-    { label: 'Resume', link: '/resume' },
   ]
 
   // FAQ data
   export const faqs = [
     {
-      question: "What are your business hours?",
-      answer: "I am available Monday through Friday from 9:00 AM to 6:00 PM IST. On weekends, my online support is available from 10:00 AM to 4:00 PM IST."
+      question: "What painting services do you offer?",
+      answer: "We offer residential and commercial painting, including interior, exterior, custom murals, and texture painting."
     },
     {
-      question: "How quickly do you respond to inquiries?",
-      answer: "I aim to respond to all inquiries within 24 business hours. For urgent matters, please indicate in your message or call my support line directly."
+      question: "How long does a typical painting project take?",
+      answer: "It depends on the scope. A standard room might take 1-2 days, while a full exterior could take a week. We provide a timeline during consultation."
     },
     {
-      question: "Do you offer international services?",
-      answer: "Yes! I serve clients globally and have representatives in multiple time zones to ensure prompt communication regardless of your location."
+      question: "Do you help with color selection?",
+      answer: "Yes! We offer a complimentary color consultation to help you choose the perfect palette to match your style and lighting."
     },
     {
-      question: "What payment methods do you accept?",
-      answer: "I accept all major credit cards,Paytm, PhonePay , GPay, PayPal, bank transfers, and cryptocurrency for select services. Payment details will be provided after initial consultation."
+      question: "What types of paint do you use?",
+      answer: "We use premium, eco-friendly, and highly durable paints from top brands to ensure a long-lasting and vibrant finish."
     }
   ];
 
   // Team members data
   export const team = [
-    { name: "Alex Morgan", role: "CEO & Founder", image: "/api/placeholder/100/100" },
-    { name: "Jamie Lee", role: "Customer Support Lead", image: "/api/placeholder/100/100" },
-    { name: "Taylor Smith", role: "Technical Director", image: "/api/placeholder/100/100" }
+    { name: "Gaurav Singh", role: "Master Painter", image: "/api/placeholder/100/100" },
+    { name: "Anita Rao", role: "Color Specialist", image: "/api/placeholder/100/100" },
+    { name: "Raj Patel", role: "Project Manager", image: "/api/placeholder/100/100" }
   ];
 
   // Stats data
   export const stats = [
-    { label: "Happy Clients", value: "2,500+" },
-    { label: "Projects Completed", value: "1,200+" },
-    { label: "Support Hours", value: "24/7" },
-    { label: "Team Members", value: "50+" }
+    { label: "Homes Painted", value: "2,500+" },
+    { label: "Rooms Transformed", value: "12,000+" },
+    { label: "Colors Mixed", value: "Infinite" },
+    { label: "Expert Painters", value: "50+" }
   ];
 

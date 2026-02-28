@@ -2,23 +2,23 @@ import MainLayout from "@/components/MainLayout";
 import { ModernContact } from "@/components/ModernContact";
 
 export const metadata = {
-  title: "Contact | Pankaj Verma (ivpankaj)",
+  title: "Contact | PainterG - Get a Quote",
   description:
-    "Let's build something exceptional. Get in touch with Pankaj Verma (ivpankaj) for premium web development, AI integration, and technical collaborations.",
-  keywords: ["Contact Pankaj Verma", "Hire Software Developer", "Freelance MERN Developer", "AI Engineer Contact"],
+    "Let's transform your space. Get in touch with PainterG for premium painting services, consultations, and color advice.",
+  keywords: ["Contact PainterG", "Hire Painter", "Painting Quote", "Professional Painting Estimates"],
   alternates: {
-    canonical: "https://ivpankaj.online/contact",
+    canonical: "https://painterg.cookmytech.site/contact",
   },
   openGraph: {
-    title: "Contact | Pankaj Verma (ivpankaj)",
-    description: "Let's build something exceptional. Get in touch with Pankaj Verma (ivpankaj) for premium web development.",
-    url: "https://ivpankaj.online/contact",
-    images: [{ url: "/ivpankaj.png", width: 1200, height: 630, alt: "Contact Pankaj Verma" }],
+    title: "Contact | PainterG - Get a Quote",
+    description: "Let's transform your space. Get in touch with PainterG for premium painting services.",
+    url: "https://painterg.cookmytech.site/contact",
+    images: [{ url: "/ivpankaj.png", width: 1200, height: 630, alt: "Contact PainterG" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Contact | Pankaj Verma",
-    description: "Get in touch with Pankaj Verma (ivpankaj) for premium web development.",
+    title: "Contact | PainterG",
+    description: "Get in touch with PainterG for premium painting services.",
     images: ["/ivpankaj.png"],
   },
 };

@@ -3,22 +3,22 @@ import { BentoSkills } from "@/components/BentoSkills";
 import { TechMarquee } from "@/components/TechMarquee";
 
 export const metadata = {
-    title: "Tech Stack | Pankaj Verma (ivpankaj)",
-    description: "The modern tech stack used by Pankaj Verma to build high-performance applications.",
-    keywords: ["Pankaj Verma Tech Stack", "MERN Stack Developer", "Next.js Tools", "React Skills", "Typescript Node.js MongoDB"],
+    title: "Materials | PainterG",
+    description: "The premium paints, tools, and materials used by PainterG for exquisite finishes.",
+    keywords: ["PainterG Materials", "Premium Paints", "Painting Equipment", "High Quality Finishes"],
     alternates: {
-        canonical: "https://ivpankaj.online/stack",
+        canonical: "https://painterg.cookmytech.site/stack",
     },
     openGraph: {
-        title: "Tech Stack | Pankaj Verma (ivpankaj)",
-        description: "The modern tech stack used by Pankaj Verma to build high-performance applications.",
-        url: "https://ivpankaj.online/stack",
-        images: [{ url: "/ivpankaj.png", width: 1200, height: 630, alt: "Pankaj Verma - Tech Stack" }],
+        title: "Materials | PainterG",
+        description: "The premium paints, tools, and materials used by PainterG.",
+        url: "https://painterg.cookmytech.site/stack",
+        images: [{ url: "/ivpankaj.png", width: 1200, height: 630, alt: "PainterG - Materials" }],
     },
     twitter: {
         card: "summary_large_image",
-        title: "Tech Stack | Pankaj Verma",
-        description: "The modern tech stack used by Pankaj Verma to build high-performance applications.",
+        title: "Materials | PainterG",
+        description: "The premium paints, tools, and materials used by PainterG.",
         images: ["/ivpankaj.png"],
     },
 };

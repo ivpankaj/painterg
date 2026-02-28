@@ -1,6 +1,6 @@
 // next-sitemap.config.js
 module.exports = {
-  siteUrl: 'https://ivpankaj.online', // 🔁 Replace with your real domain
+  siteUrl: 'https://painterg.cookmytech.site', // 🔁 Replace with your real domain
   generateRobotsTxt: true,           // Automatically create robots.txt
   sitemapSize: 7000,                 // Max URLs per sitemap file
   changefreq: 'daily',

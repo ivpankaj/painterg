@@ -7,9 +7,9 @@ import { Menu, X, Github, Linkedin, Twitter } from "lucide-react";
 
 const navItems = [
     { name: "Home", href: "/" },
-    { name: "Work", href: "/projects" },
-    { name: "About", href: "/about" },
-    { name: "Stack", href: "/stack" },
+    { name: "Gallery", href: "/projects" },
+    { name: "About Us", href: "/about" },
+    { name: "Materials", href: "/stack" },
     { name: "Services", href: "/services" },
 ];
 
@@ -39,8 +39,7 @@ export const ModernNav = () => {
         `}>
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-2 pl-4">
-                      
-                        <span className="font-bold text-xl tracking-tighter text-black uppercase">Pankaj</span>
+                        <span className="font-bold text-xl tracking-tighter text-black uppercase">Painter</span><span className="font-bold text-xl tracking-tighter text-yellow-500 uppercase">G</span>
                     </Link>
 
                     {/* Desktop Nav */}

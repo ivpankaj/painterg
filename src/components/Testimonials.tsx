@@ -7,38 +7,38 @@ import Image from "next/image";
 const testimonials = [
     {
         name: "Alex Johnson",
-        username: "@alexj_tech",
-        body: "Pankaj is a wizard with React! He delivered our project ahead of schedule and the code quality was top-notch.",
+        username: "@alexj_home",
+        body: "PainterG transformed our living room! The attention to detail and color matching was absolutely flawless.",
         img: "https://avatar.vercel.sh/alex",
     },
     {
         name: "Sarah Williams",
         username: "@sarah_w",
-        body: "Working with Pankaj was a breeze. He understood our requirements perfectly and the end result exceeded our expectations.",
+        body: "Working with PainterG was a breeze. They understood our vision perfectly and the end result exceeded our expectations.",
         img: "https://avatar.vercel.sh/sarah",
     },
     {
         name: "David Chen",
-        username: "@davidc_dev",
-        body: "I was impressed by his problem-solving skills. He fixed a complex bug in our backend that had been plaguing us for weeks.",
+        username: "@davidc_bldg",
+        body: "I was impressed by their efficiency. They completely repainted our office space over the weekend with zero business disruption.",
         img: "https://avatar.vercel.sh/david",
     },
     {
         name: "Emily Davis",
         username: "@emily_d",
-        body: "Highly recommend Pankaj for any full-stack work. He is professional, communicative, and very skilled.",
+        body: "Highly recommend PainterG for any interior work. They are professional, communicative, and very skilled painters.",
         img: "https://avatar.vercel.sh/emily",
     },
     {
         name: "Michael Brown",
         username: "@mike_b",
-        body: "The UI he designed for our app is stunning. Our users love the new look and feel.",
+        body: "The custom mural they designed for our cafe is stunning. Our customers love the new vibrant art and atmosphere.",
         img: "https://avatar.vercel.sh/michael",
     },
     {
         name: "Lisa Wilson",
         username: "@lisa_w",
-        body: "Pankaj is a true professional. He helped us scale our application to handle thousands of concurrent users.",
+        body: "PainterG is a true professional service. They helped us choose the perfect weather-resistant paints for our exterior.",
         img: "https://avatar.vercel.sh/lisa",
     },
 ];

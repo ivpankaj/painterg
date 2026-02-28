@@ -7,7 +7,7 @@ User-agent: *
 Disallow: /admin
 
 # Host
-Host: https://ivpankaj.online
+Host: https://painterg.cookmytech.site
 
 # Sitemaps
-Sitemap: https://ivpankaj.online/sitemap.xml
+Sitemap: https://painterg.cookmytech.site/sitemap.xml

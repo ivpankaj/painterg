@@ -2,23 +2,23 @@ import MainLayout from "@/components/MainLayout";
 import { ModernServices } from "@/components/ModernServices";
 
 export const metadata = {
-  title: "Services | Pankaj Verma (ivpankaj)",
+  title: "Services | PainterG - Painting Solutions",
   description:
-    "Explore the technical services offered by Pankaj Verma (ivpankaj) — Professional web development, mobile solutions, and system architecture.",
-  keywords: ["Software Development Services", "Hire Web Developer Noida", "MERN Stack Freelancer", "Custom SaaS Development", "IT Consulting"],
+    "Explore the professional painting services offered by PainterG — Expertise in interior, exterior, commercial, and custom decorative painting.",
+  keywords: ["Painting Services", "Hire Painters Noida", "Best Painting Contractors", "Wall Textures", "Exterior Painting"],
   alternates: {
-    canonical: "https://ivpankaj.online/services",
+    canonical: "https://painterg.cookmytech.site/services",
   },
   openGraph: {
-    title: "Services | Pankaj Verma (ivpankaj)",
-    description: "Explore the technical services offered by Pankaj Verma (ivpankaj) — Professional web development, mobile solutions, and system architecture.",
-    url: "https://ivpankaj.online/services",
-    images: [{ url: "/ivpankaj.png", width: 1200, height: 630, alt: "Pankaj Verma - Services" }],
+    title: "Services | PainterG - Painting Solutions",
+    description: "Explore the professional painting services offered by PainterG.",
+    url: "https://painterg.cookmytech.site/services",
+    images: [{ url: "/ivpankaj.png", width: 1200, height: 630, alt: "PainterG - Services" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Services | Pankaj Verma",
-    description: "Explore the technical services offered by Pankaj Verma (ivpankaj).",
+    title: "Services | PainterG",
+    description: "Explore the professional painting services offered by PainterG.",
     images: ["/ivpankaj.png"],
   },
 };

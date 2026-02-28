@@ -2,49 +2,44 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { ExternalLink, Github, ArrowUpRight } from "lucide-react";
-import {
-    SiReact, SiNextdotjs, SiTypescript, SiTailwindcss,
-    SiPostgresql, SiTensorflow, SiExpress, SiRedis,
-    SiRust, SiSolana
-} from "react-icons/si";
+import { ExternalLink, Github, ArrowUpRight, Palette, Paintbrush, PaintBucket, Shield, Sparkles, Layers } from "lucide-react";
 
 const projects = [
     {
-        title: "NeuroDashboard X",
-        category: "GEN-AI // SUSTAINABILITY",
-        description: "Neural network visualization for carbon sequestration forecasting across fragmented global datasets.",
+        title: "The Heritage Villa",
+        category: "EXTERIOR // RESTORATION",
+        description: "Comprehensive exterior painting and weatherproofing for a classic heritage villa.",
         image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2026&auto=format&fit=crop",
         tech: [
-            { name: "Next.js", Icon: SiNextdotjs },
-            { name: "TensorFlow", Icon: SiTensorflow },
-            { name: "PostgreSQL", Icon: SiPostgresql }
+            { name: "Weatherproofing", Icon: Shield },
+            { name: "Exterior Latex", Icon: PaintBucket },
+            { name: "Scaffolding", Icon: Layers }
         ],
         link: "#",
         github: "#"
     },
     {
-        title: "Quantum SaaS",
-        category: "ENTERPRISE INTELLIGENCE",
-        description: "Predictive CRM infrastructure with autonomous lead generation and vector-based analytics.",
+        title: "Modern Minimalist Loft",
+        category: "INTERIOR // TEXTURE",
+        description: "A sleek interior transformation featuring custom limewash textures and a neutral color palette.",
         image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
         tech: [
-            { name: "React", Icon: SiReact },
-            { name: "Express", Icon: SiExpress },
-            { name: "Redis", Icon: SiRedis }
+            { name: "Custom Mix", Icon: Palette },
+            { name: "Limewash", Icon: Paintbrush },
+            { name: "Premium Matte", Icon: Sparkles }
         ],
         link: "#",
         github: "#"
     },
     {
-        title: "Aether Protocol",
-        category: "DECENTRALIZED COMPUTE",
-        description: "High-throughput liquid staking protocol optimized for ultra-low latency mesh networks.",
+        title: "Corporate Headquarters",
+        category: "COMMERCIAL // BRANDING",
+        description: "Vibrant and professional workspace painting tailored to match the client's corporate branding.",
         image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=2064&auto=format&fit=crop",
         tech: [
-            { name: "Rust", Icon: SiRust },
-            { name: "Solana", Icon: SiSolana },
-            { name: "Tailwind", Icon: SiTailwindcss }
+            { name: "Corporate Epoxy", Icon: PaintBucket },
+            { name: "Color Matching", Icon: Palette },
+            { name: "Industrial Coating", Icon: Sparkles }
         ],
         link: "#",
         github: "#"
@@ -57,12 +52,12 @@ export const WorkHighlight = () => {
             <div className="max-w-7xl mx-auto">
                 <div className="flex flex-col md:flex-row items-end justify-between mb-24 gap-8">
                     <div className="max-w-2xl">
-                        <span className="text-xs font-black uppercase tracking-[0.4em] text-gray-400 mb-6 block">PROJECT ARCHIVE</span>
+                        <span className="text-xs font-black uppercase tracking-[0.4em] text-gray-400 mb-6 block">OUR PORTFOLIO</span>
                         <h2 className="text-5xl md:text-8xl font-black text-black mb-6 tracking-tighter">
-                            SELECT <span className="text-gray-200">WORK</span>
+                            FEATURED <span className="text-indigo-500">PROJECTS</span>
                         </h2>
                         <p className="text-gray-400 text-xl font-light leading-relaxed">
-                            A curated exhibition of high-performance digital architectures.
+                            A curated exhibition of our most stunning residential and commercial transformations.
                         </p>
                     </div>
                     <button className="flex items-center gap-3 text-black font-black uppercase text-xs tracking-widest group border-b-2 border-black pb-2">

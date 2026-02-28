@@ -4,7 +4,7 @@ export function TextRevealIntro() {
   return (
     <>
       <TextReveal>
-        {"Hello World! 🌎 \nI am Pankaj Verma. \nSoftware Developer from Noida. \nI build high-quality web &amp; mobile applications that solve real-world problems."}
+        {"Welcome! 🎨 \nWe are PainterG. \nMaster Painters from the City. \nWe deliver high-quality residential & commercial painting that transforms your spaces."}
       </TextReveal>
 
     </>

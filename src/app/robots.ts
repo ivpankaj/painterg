@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
             allow: '/',
             disallow: ['/private/', '/admin/'],
         },
-        sitemap: 'https://ivpankaj.online/sitemap.xml',
+        sitemap: 'https://painterg.cookmytech.site/sitemap.xml',
     }
 }

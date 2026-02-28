@@ -2,31 +2,27 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import {
-    SiReact, SiNextdotjs, SiNodedotjs, SiTypescript, SiTailwindcss,
-    SiMongodb, SiPostgresql, SiDocker, SiAmazonwebservices, SiFirebase,
-    SiExpress, SiPython, SiGraphql, SiStrapi, SiFigma, SiRedux, SiRedis, SiJavascript
-} from "react-icons/si";
+import { Palette, Paintbrush, PaintBucket, Pipette, Sparkles, Droplets, Droplet, Layers } from "lucide-react";
 
 const tech = [
-    { name: "React", Icon: SiReact, color: "#000000" },
-    { name: "Next.js", Icon: SiNextdotjs, color: "#000000" },
-    { name: "Node.js", Icon: SiNodedotjs, color: "#000000" },
-    { name: "TypeScript", Icon: SiTypescript, color: "#000000" },
-    { name: "TailwindCSS", Icon: SiTailwindcss, color: "#000000" },
-    { name: "MongoDB", Icon: SiMongodb, color: "#000000" },
-    { name: "PostgreSQL", Icon: SiPostgresql, color: "#000000" },
-    { name: "Docker", Icon: SiDocker, color: "#000000" },
-    { name: "AWS", Icon: SiAmazonwebservices, color: "#000000" },
-    { name: "Firebase", Icon: SiFirebase, color: "#000000" },
-    { name: "Express", Icon: SiExpress, color: "#000000" },
-    { name: "Python", Icon: SiPython, color: "#000000" },
-    { name: "GraphQL", Icon: SiGraphql, color: "#000000" },
-    { name: "Strapi", Icon: SiStrapi, color: "#000000" },
-    { name: "Figma", Icon: SiFigma, color: "#000000" },
-    { name: "Redux", Icon: SiRedux, color: "#000000" },
-    { name: "Redis", Icon: SiRedis, color: "#000000" },
-    { name: "JavaScript", Icon: SiJavascript, color: "#000000" },
+    { name: "Interior Painting", Icon: Paintbrush, color: "text-blue-500" },
+    { name: "Exterior Paint", Icon: PaintBucket, color: "text-rose-500" },
+    { name: "Color Consult", Icon: Palette, color: "text-green-500" },
+    { name: "Wall Texturing", Icon: Layers, color: "text-cyan-500" },
+    { name: "Custom Murals", Icon: Paintbrush, color: "text-purple-500" },
+    { name: "Residential", Icon: Sparkles, color: "text-yellow-500" },
+    { name: "Commercial", Icon: Layers, color: "text-orange-500" },
+    { name: "Waterproofing", Icon: Droplets, color: "text-teal-500" },
+    { name: "Staining", Icon: Pipette, color: "text-amber-600" },
+    { name: "Drywall Repair", Icon: Layers, color: "text-red-500" },
+    { name: "Cabinet Painting", Icon: Paintbrush, color: "text-indigo-500" },
+    { name: "Furniture Polish", Icon: Sparkles, color: "text-pink-500" },
+    { name: "Faux Finishes", Icon: Palette, color: "text-lime-500" },
+    { name: "Epoxy Flooring", Icon: Droplet, color: "text-emerald-500" },
+    { name: "Wallpapering", Icon: Layers, color: "text-fuchsia-500" },
+    { name: "Plastering", Icon: Palette, color: "text-violet-500" },
+    { name: "Trim & Molding", Icon: Layers, color: "text-sky-500" },
+    { name: "Deck Staining", Icon: PaintBucket, color: "text-rose-600" },
 ];
 
 export const TechMarquee = () => {
@@ -46,15 +42,15 @@ export const TechMarquee = () => {
                         className="flex items-center gap-24 px-12"
                     >
                         {tech.map((item, idx) => (
-                            <div key={`${item.name}-${idx}`} className="flex items-center gap-6 group">
+                            <div key={`${item.name}-${idx}`} className="flex items-center gap-6 group hover:scale-105 transition-transform duration-300">
                                 <item.Icon
                                     size={32}
-                                    className="text-black opacity-10 group-hover:opacity-100 transition-opacity duration-500"
+                                    className={`${item.color} opacity-80 group-hover:opacity-100 transition-opacity duration-500`}
                                 />
-                                <span className="text-3xl md:text-5xl font-black text-black/[0.03] uppercase group-hover:text-black transition-colors cursor-default tracking-tighter">
+                                <span className={`text-3xl md:text-5xl font-black ${item.color} uppercase transition-colors cursor-default tracking-tighter drop-shadow-sm`}>
                                     {item.name}
                                 </span>
-                                <span className="text-black/5 font-light text-2xl">/</span>
+                                <span className="text-gray-300 font-light text-2xl">/</span>
                             </div>
                         ))}
                     </motion.div>

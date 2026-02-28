@@ -3,57 +3,56 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { SiReact, SiNextdotjs, SiNodedotjs, SiFirebase, SiAmazonwebservices, SiTailwindcss, SiTypescript, SiPython, SiOpenai } from "react-icons/si";
-import { ArrowRight, Box, Cpu, Database, Activity } from "lucide-react";
+import { ArrowRight, Box, Cpu, Database, Activity, Palette, Paintbrush, PaintBucket, Sparkles, Layers } from "lucide-react";
 
 const projects = [
     {
-        title: "NEURAL TRANSIT / WE4YOU",
-        subtitle: "TRANSPORTATION ENGINE",
-        description: "Autonomous logistical orchestration system utilizing real-time driver telemetry and predictive geo-spatial indexing.",
-        icon: <Cpu size={32} />,
-        link: "/taxi-booking-app",
+        title: "THE GRAND VILLA",
+        subtitle: "EXTERIOR EXCELLENCE",
+        description: "Complete exterior repainting and masonry coating for a 10,000 sq ft grand villa.",
+        image: "https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        link: "/services",
         tech: [
-            { name: "Node.js", Icon: SiNodedotjs },
-            { name: "React Native", Icon: SiReact },
-            { name: "FastAPI", Icon: SiPython }
+            { name: "Masonry Coating", Icon: PaintBucket },
+            { name: "Exterior Paint", Icon: Paintbrush },
+            { name: "Sealant", Icon: Layers }
         ]
     },
     {
-        title: "SYNAPSE LMS",
-        subtitle: "COGNITIVE ARCHIVE",
-        description: "Decentralized knowledge distribution network with asynchronous video serialization and performance analytics.",
-        icon: <Database size={32} />,
-        link: "/learning-management-system",
+        title: "MODERN LOFT INTERIOR",
+        subtitle: "URBAN LIVING",
+        description: "Custom texture painting and high-contrast color scheme for an open-concept living space.",
+        image: "https://images.pexels.com/photos/7060799/pexels-photo-7060799.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        link: "/services",
         tech: [
-            { name: "Next.js", Icon: SiNextdotjs },
-            { name: "Firebase", Icon: SiFirebase },
-            { name: "TypeScript", Icon: SiTypescript }
+            { name: "Interior Matte", Icon: Palette },
+            { name: "Custom Textures", Icon: Paintbrush },
+            { name: "Accent Colors", Icon: Sparkles }
         ]
     },
     {
-        title: "ACADEMIA SYNC",
-        subtitle: "RESEARCH INTERFACE",
-        description: "Collaborative research protocol with real-time state synchronization and automated document processing.",
-        icon: <Box size={32} />,
-        link: "/cookmypapers",
+        title: "CITY HQ PAINTING",
+        subtitle: "COMMERCIAL SPACE",
+        description: "Large scale interior painting project for a modern 5-story corporate headquarters.",
+        image: "https://images.pexels.com/photos/316093/pexels-photo-316093.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        link: "/services",
         tech: [
-            { name: "MERN Stack", Icon: SiReact },
-            { name: "AWS S3", Icon: SiAmazonwebservices },
-            { name: "Redux", Icon: SiReact }
+            { name: "Commercial Grade", Icon: PaintBucket },
+            { name: "Epoxy Finish", Icon: Sparkles },
+            { name: "Scale Execution", Icon: Layers }
         ]
     }
 ];
 
 const lab = [
     {
-        title: "CORE.GEN",
-        description: "Experimental generative interfaces for automated digital asset production.",
-        icon: <SiOpenai size={24} />,
+        title: "VIBRANT MURALS",
+        description: "Custom wall art and intricate murals painted by our top artists for unique interior spaces.",
+        icon: <Palette size={24} />,
     },
     {
-        title: "METRIC.OS",
-        description: "Global IoT sensor mesh for high-fidelity climate impact monitoring.",
+        title: "EPOXY FINISHES",
+        description: "Durable and visually stunning epoxy floor coatings tailored for showrooms and garages.",
         icon: <Activity size={24} />,
     }
 ];
@@ -64,13 +63,13 @@ export const ModernProjects = () => {
             <div className="max-w-7xl mx-auto">
                 {/* Header */}
                 <div className="mb-32">
-                    <span className="text-xs font-black uppercase tracking-[0.4em] text-gray-400 mb-8 block">Active Deployments</span>
+                    <span className="text-xs font-black uppercase tracking-[0.4em] text-gray-400 mb-8 block">Finished Works</span>
                     <motion.h1
                         initial={{ opacity: 0, scale: 0.98 }}
                         animate={{ opacity: 1, scale: 1 }}
                         className="text-6xl md:text-9xl font-black mb-10 tracking-tighter leading-none"
                     >
-                        SYSTEM <br /> <span className="text-gray-200 uppercase">Archive</span>
+                        PROJECT <br /> <span className="text-blue-500 uppercase">Gallery</span>
                     </motion.h1>
                     <div className="w-24 h-1 bg-black rounded-full" />
                 </div>
@@ -88,13 +87,12 @@ export const ModernProjects = () => {
                         >
                             <div className="lg:w-1/2 w-full">
                                 <div className="relative aspect-[16/10] bg-gray-50 border border-black/[0.03] rounded-[48px] overflow-hidden shadow-2xl shadow-black/[0.02]">
-                                    <div className="absolute inset-0 flex items-center justify-center text-black/5 group-hover:text-black transition-all duration-700">
-                                        <div className="p-16 bg-white rounded-full border border-black/[0.03] shadow-xl scale-90 group-hover:scale-100 transition-transform duration-700">
-                                            {project.icon}
-                                        </div>
-                                    </div>
-                                    {/* AI Pattern Overlay */}
-                                    <div className="absolute inset-0 opacity-[0.02] pointer-events-none" style={{ backgroundImage: 'radial-gradient(#000 1px, transparent 1px)', backgroundSize: '30px 30px' }} />
+                                    <img
+                                        src={project.image}
+                                        alt={project.title}
+                                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                                    />
+                                    <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-700" />
                                 </div>
                             </div>
 
@@ -122,22 +120,21 @@ export const ModernProjects = () => {
                                     href={project.link}
                                     className="w-fit flex items-center gap-3 px-10 py-5 bg-black text-white font-black text-xs uppercase tracking-widest rounded-3xl hover:bg-gray-800 transition-all shadow-xl shadow-black/10"
                                 >
-                                    Access Protocol <ArrowRight size={16} />
+                                    View Case Study <ArrowRight size={16} />
                                 </Link>
                             </div>
                         </motion.div>
                     ))}
                 </div>
 
-                {/* Laboratory */}
                 <div className="mt-60 border-t border-black/[0.03] pt-32">
                     <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-20 gap-8">
                         <div>
-                            <span className="text-xs font-black uppercase tracking-[0.4em] text-gray-400 mb-6 block">Experimental</span>
-                            <h3 className="text-5xl font-black tracking-tighter">LABORATORY</h3>
+                            <span className="text-xs font-black uppercase tracking-[0.4em] text-gray-400 mb-6 block">Specialized</span>
+                            <h3 className="text-5xl font-black tracking-tighter">TECHNIQUES</h3>
                         </div>
                         <p className="text-gray-400 text-lg font-light max-w-sm">
-                            Beta phase explorations into autonomous system behaviors.
+                            Showcasing unique texture blending and custom mural solutions.
                         </p>
                     </div>
 

@@ -25,29 +25,25 @@ export const viewport: Viewport = {
 /* --- GLOBAL SEO (Root Metadata) --- */
 export const metadata: Metadata = {
   title: {
-    default: "Pankaj Verma | ivpankaj",
-    template: "%s | Pankaj Verma",
+    default: "PainterG | Professional Painting Services",
+    template: "%s | PainterG",
   },
   description:
-    "Official portfolio of Pankaj Verma (ivpankaj) — Computer Science Engineer & MERN Stack Developer. Exploring software engineering, full-stack development, and AI.",
+    "Official website of PainterG — Professional Residential and Commercial Painting Services. Elevating spaces with vibrant colors and expert craftsmanship.",
   keywords: [
-    "Pankaj Verma",
-    "ivpankaj",
-    "Pankaj",
-    "pankaj",
-    "software developer",
-    "best software developer in Noida",
-    "best software developer in Greater Noida",
-    "mern developer in Noida",
-    "software engineer Noida",
-    "portfolio",
-    "full stack developer",
-    "computer science engineer",
-    "web development Greater Noida",
-    "next.js developer",
-    "react developer",
+    "PainterG",
+    "Painter",
+    "painting company",
+    "best painters in Noida",
+    "house painting",
+    "commercial painting",
+    "exterior painting",
+    "interior painting",
+    "custom murals",
+    "wall texturing",
+    "painting services",
   ],
-  metadataBase: new URL("https://ivpankaj.online"),
+  metadataBase: new URL("https://painterg.cookmytech.site"),
   alternates: {
     canonical: "/",
     languages: {
@@ -55,11 +51,11 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Pankaj Verma | ivpankaj",
+    title: "PainterG | Professional Painting Services",
     description:
-      "Portfolio of Pankaj Verma — MERN Stack Developer & Computer Science Engineer. View my projects, skills, and experience.",
-    url: "https://ivpankaj.online",
-    siteName: "ivpankaj",
+      "Official website of PainterG — Professional Residential and Commercial Painting Services.",
+    url: "https://painterg.cookmytech.site",
+    siteName: "PainterG",
     locale: "en_US",
     type: "website",
     images: [
@@ -67,16 +63,16 @@ export const metadata: Metadata = {
         url: "/ivpankaj.png",
         width: 1200,
         height: 630,
-        alt: "Pankaj Verma - Portfolio",
+        alt: "PainterG",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pankaj Verma | ivpankaj",
+    title: "PainterG | Professional Painting Services",
     description:
-      "Portfolio of Pankaj Verma — MERN Stack Developer & Computer Science Engineer.",
-    creator: "@ivpankaj",
+      "Official website of PainterG — Professional Residential and Commercial Painting Services.",
+    creator: "@painter_g",
     images: ["/ivpankaj.png"],
   },
   verification: {
@@ -97,11 +93,11 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  category: "technology",
+  category: "Home & Garden",
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
-    title: "Pankaj Verma",
+    title: "PainterG",
   },
   formatDetection: {
     telephone: false,
@@ -159,19 +155,18 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "Person",
-              name: "Pankaj Verma",
-              alternateName: ["ivpankaj", "ivpankaj.online", "Pankaj"],
+              "@type": "LocalBusiness",
+              name: "PainterG",
+              alternateName: ["Painter G", "PainterG Services"],
               description:
-                "Best Software Developer in Noida & Greater Noida — Portfolio of Pankaj Verma (ivpankaj), a MERN Stack Developer & Computer Science Engineer.",
-              url: "https://ivpankaj.online",
-              jobTitle: "Software Developer",
+                "Top rated painting services. Professional residential, commercial, exterior and interior painting.",
+              url: "https://painterg.cookmytech.site",
               knowsAbout: [
-                "Software Engineering",
-                "MERN Stack",
-                "React",
-                "Next.js",
-                "AI",
+                "House Painting",
+                "Color Theory",
+                "Texturing",
+                "Murals",
+                "Commercial Painting",
               ],
               address: {
                 "@type": "PostalAddress",
@@ -179,13 +174,7 @@ export default function RootLayout({
                 addressRegion: "Uttar Pradesh",
                 addressCountry: "India"
               },
-              sameAs: [
-                "https://instagram.com/ivpankaj",
-                "https://twitter.com/ivpankaj",
-                "https://github.com/ivpankaj",
-                "https://linkedin.com/in/ivpankaj",
-              ],
-              image: "https://ivpankaj.online/ivpankaj.png",
+              image: "https://painterg.cookmytech.site/ivpankaj.png",
             }),
           }}
         />

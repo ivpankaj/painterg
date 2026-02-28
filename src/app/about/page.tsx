@@ -2,23 +2,23 @@ import MainLayout from "@/components/MainLayout";
 import { ModernAbout } from "@/components/ModernAbout";
 
 export const metadata = {
-  title: "About | Pankaj Verma - Modern Software Architect",
+  title: "About | PainterG - Professional Painters",
   description:
-    "Learn more about the engineering mindset of Pankaj Verma (ivpankaj) — A specialist in high-performance web applications and scalable digital solutions.",
-  keywords: ["About Pankaj Verma", "ivpankaj biography", "Software Architect Noida", "MERN Stack Professional"],
+    "Learn more about PainterG — Masters in transforming houses into beautiful homes with our exceptional painting services.",
+  keywords: ["About PainterG", "Professional Painters", "Painting Company History", "Color Experts"],
   alternates: {
-    canonical: "https://ivpankaj.online/about",
+    canonical: "https://painterg.cookmytech.site/about",
   },
   openGraph: {
-    title: "About | Pankaj Verma - Modern Software Architect",
-    description: "Learn more about the engineering mindset of Pankaj Verma (ivpankaj) — A specialist in high-performance web applications.",
-    url: "https://ivpankaj.online/about",
-    images: [{ url: "/ivpankaj.png", width: 1200, height: 630, alt: "Pankaj Verma - About" }],
+    title: "About | PainterG - Professional Painters",
+    description: "Learn more about PainterG — Masters in transforming houses into beautiful homes with our exceptional painting services.",
+    url: "https://painterg.cookmytech.site/about",
+    images: [{ url: "/ivpankaj.png", width: 1200, height: 630, alt: "PainterG - About" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "About | Pankaj Verma",
-    description: "Learn more about the engineering mindset of Pankaj Verma (ivpankaj).",
+    title: "About | PainterG",
+    description: "Learn more about PainterG — Masters in transforming houses into beautiful homes.",
     images: ["/ivpankaj.png"],
   },
 };
