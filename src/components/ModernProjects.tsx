@@ -67,7 +67,7 @@ export const ModernProjects = () => {
                     <motion.h1
                         initial={{ opacity: 0, scale: 0.98 }}
                         animate={{ opacity: 1, scale: 1 }}
-                        className="text-6xl md:text-9xl font-black mb-10 tracking-tighter leading-none"
+                        className="text-5xl md:text-6xl lg:text-9xl font-black mb-6 lg:mb-10 tracking-tighter leading-none"
                     >
                         PROJECT <br /> <span className="text-blue-500 uppercase">Gallery</span>
                     </motion.h1>
@@ -75,7 +75,7 @@ export const ModernProjects = () => {
                 </div>
 
                 {/* Project List */}
-                <div className="space-y-40">
+                <div className="space-y-24 md:space-y-40">
                     {projects.map((project, index) => (
                         <motion.div
                             key={index}
@@ -83,7 +83,7 @@ export const ModernProjects = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.8 }}
-                            className="group flex flex-col lg:flex-row gap-16 items-start"
+                            className="group flex flex-col lg:flex-row gap-8 lg:gap-16 items-start"
                         >
                             <div className="lg:w-1/2 w-full">
                                 <div className="relative aspect-[16/10] bg-gray-50 border border-black/[0.03] rounded-[48px] overflow-hidden shadow-2xl shadow-black/[0.02]">
@@ -100,7 +100,7 @@ export const ModernProjects = () => {
                                 <span className="text-[10px] font-black uppercase tracking-[4px] text-gray-400 mb-6 block">
                                     {project.subtitle}
                                 </span>
-                                <h2 className="text-4xl md:text-5xl font-black mb-8 tracking-tighter group-hover:text-gray-500 transition-colors">
+                                <h2 className="text-3xl md:text-4xl lg:text-5xl font-black mb-6 md:mb-8 tracking-tighter group-hover:text-gray-500 transition-colors">
                                     {project.title}
                                 </h2>
                                 <p className="text-gray-500 text-lg mb-10 leading-relaxed font-light max-w-xl">
@@ -127,20 +127,20 @@ export const ModernProjects = () => {
                     ))}
                 </div>
 
-                <div className="mt-60 border-t border-black/[0.03] pt-32">
-                    <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-20 gap-8">
+                <div className="mt-32 md:mt-60 border-t border-black/[0.03] pt-16 md:pt-32">
+                    <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 md:mb-20 gap-8">
                         <div>
                             <span className="text-xs font-black uppercase tracking-[0.4em] text-gray-400 mb-6 block">Specialized</span>
-                            <h3 className="text-5xl font-black tracking-tighter">TECHNIQUES</h3>
+                            <h3 className="text-4xl md:text-5xl font-black tracking-tighter">TECHNIQUES</h3>
                         </div>
                         <p className="text-gray-400 text-lg font-light max-w-sm">
                             Showcasing unique texture blending and custom mural solutions.
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
                         {lab.map((p, i) => (
-                            <div key={i} className="p-12 bg-gray-50/50 border border-black/[0.03] rounded-[48px] hover:bg-black hover:text-white transition-all duration-500 group">
+                            <div key={i} className="p-8 md:p-12 bg-gray-50/50 border border-black/[0.03] rounded-[32px] md:rounded-[48px] hover:bg-black hover:text-white transition-all duration-500 group">
                                 <div className="mb-10 p-5 bg-white rounded-2xl w-fit group-hover:bg-white/10 transition-colors text-black group-hover:text-white shadow-sm">
                                     {p.icon}
                                 </div>

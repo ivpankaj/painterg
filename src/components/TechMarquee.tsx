@@ -39,7 +39,7 @@ export const TechMarquee = () => {
                             repeat: Infinity,
                             ease: "linear"
                         }}
-                        className="flex items-center gap-24 px-12"
+                        className="flex items-center gap-12 md:gap-24 px-6 md:px-12"
                     >
                         {tech.map((item, idx) => (
                             <div key={`${item.name}-${idx}`} className="flex items-center gap-6 group hover:scale-105 transition-transform duration-300">

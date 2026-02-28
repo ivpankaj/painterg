@@ -86,9 +86,9 @@ export const BentoSkills = () => {
     return (
         <div className=" bg-white">
             <div className="max-w-7xl mx-auto">
-                <div className="mb-24 flex flex-col items-center">
+                <div className="mb-16 md:mb-24 flex flex-col items-center">
                     <span className="text-xs font-black uppercase tracking-[0.3em] text-gray-400 mb-4 px-4 py-1.5 border border-black/5 rounded-full">Our Expertise</span>
-                    <h2 className="text-5xl md:text-8xl font-black text-black mb-8 tracking-tighter text-center">ARTISTIC <span className="text-blue-500">VISION</span></h2>
+                    <h2 className="text-4xl md:text-8xl font-black text-black mb-6 md:mb-8 tracking-tighter text-center">ARTISTIC <span className="text-blue-500">VISION</span></h2>
                     <div className="w-20 h-1 bg-black rounded-full" />
                 </div>
 
@@ -102,7 +102,7 @@ export const BentoSkills = () => {
                             transition={{ duration: 0.6, delay: index * 0.1 }}
                             className={`
                 relative group rounded-[32px] border border-black/[0.03] overflow-hidden
-                p-10 flex flex-col justify-end ${item.className}
+                p-8 md:p-10 flex flex-col justify-end ${item.className}
                 hover:border-black/10 transition-colors shadow-[0_4px_20px_rgb(0,0,0,0.02)]
               `}
                         >
@@ -112,7 +112,7 @@ export const BentoSkills = () => {
 
                             {item.visual && item.visual}
 
-                            <div className="relative z-10 w-2/3">
+                            <div className="relative z-10 w-[85%] md:w-2/3">
                                 <h3 className="text-sm font-black text-black mb-2 uppercase tracking-widest">{item.title}</h3>
                                 <p className="text-gray-400 text-sm leading-relaxed">{item.description}</p>
                             </div>

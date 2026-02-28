@@ -49,11 +49,11 @@ export const ModernServices = () => {
             <div className="max-w-7xl mx-auto">
                 {/* Header Sub-section */}
                 <div className="mb-32">
-                    <span className="text-[10px] font-black uppercase tracking-[0.5em] text-gray-400 mb-8 block">Our Capabilities</span>
+                    <span className="text-[10px] font-black uppercase tracking-[0.5em] text-gray-400 mb-6 block lg:inline-block">Our Capabilities</span>
                     <motion.h1
                         initial={{ opacity: 0, scale: 0.98 }}
                         animate={{ opacity: 1, scale: 1 }}
-                        className="text-6xl md:text-9xl font-black mb-10 tracking-tighter leading-none"
+                        className="text-5xl md:text-6xl lg:text-9xl font-black mb-6 md:mb-10 tracking-tighter leading-none"
                     >
                         PAINTING <br /> <span className="text-rose-500">SERVICES</span>
                     </motion.h1>
@@ -63,7 +63,7 @@ export const ModernServices = () => {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
                     {services.map((service, index) => (
                         <motion.div
                             key={index}
@@ -112,21 +112,21 @@ export const ModernServices = () => {
                     initial={{ opacity: 0, scale: 0.95 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
-                    className="mt-60 rounded-[64px] bg-black p-12 md:p-24 text-white overflow-hidden relative shadow-2xl"
+                    className="mt-32 md:mt-60 rounded-[32px] md:rounded-[64px] bg-black p-8 md:p-12 lg:p-24 text-white overflow-hidden relative shadow-2xl"
                 >
                     <div className="absolute top-0 right-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-20 pointer-events-none mix-blend-overlay"></div>
 
-                    <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-16">
-                        <div className="max-w-2xl">
-                            <div className="flex items-center gap-2 mb-8 origin-left transform hover:scale-105 transition-transform duration-300">
+                    <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16">
+                        <div className="max-w-2xl text-center lg:text-left">
+                            <div className="flex items-center justify-center lg:justify-start gap-2 mb-8 origin-left transform hover:scale-105 transition-transform duration-300">
                                 <span className="font-black text-3xl tracking-tighter text-white uppercase drop-shadow-md">Painter</span>
                                 <span className="font-black text-3xl tracking-tighter text-yellow-500 uppercase drop-shadow-md">G</span>
                             </div>
 
-                            <h3 className="text-5xl md:text-7xl font-black tracking-tighter mb-8 leading-none drop-shadow-lg">
-                                LET'S <span className="text-yellow-500">PAINT</span> <br /> YOUR VISION!
+                            <h3 className="text-4xl md:text-5xl lg:text-7xl font-black tracking-tighter mb-6 md:mb-8 leading-none drop-shadow-lg">
+                                LET'S <span className="text-yellow-500">PAINT</span> <br className="hidden md:block" /> YOUR VISION!
                             </h3>
-                            <p className="text-gray-300 text-xl font-light leading-relaxed">
+                            <p className="text-gray-300 text-lg sm:text-xl font-light leading-relaxed">
                                 Get in touch with us to schedule a color consultation and begin your space's transformation. Let our expert artists bring vibrant colors to your life.
                             </p>
                         </div>
@@ -134,7 +134,7 @@ export const ModernServices = () => {
                             href="/contact"
                             whileHover={{ scale: 1.05, y: -5 }}
                             whileTap={{ scale: 0.95 }}
-                            className="px-12 py-6 bg-white text-black font-black text-sm uppercase tracking-[0.3em] rounded-3xl shadow-xl hover:shadow-2xl hover:bg-yellow-500 transition-all text-center whitespace-nowrap"
+                            className="w-full sm:w-auto px-8 py-5 md:px-12 md:py-6 bg-white text-black font-black text-xs md:text-sm uppercase tracking-[0.3em] rounded-3xl shadow-xl hover:shadow-2xl hover:bg-yellow-500 transition-all text-center whitespace-nowrap"
                         >
                             Get an Estimate
                         </motion.a>

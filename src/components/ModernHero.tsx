@@ -50,10 +50,10 @@ export const ModernHero = () => {
             ))}
 
             {/* Main Content */}
-            <div className="z-20 px-6 max-w-[90rem] w-full mx-auto flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-24">
+            <div className="z-20 px-6 max-w-[90rem] w-full mx-auto flex flex-col lg:flex-row items-center justify-between gap-8 py-20 lg:py-0 lg:gap-24">
                 {/* Left: Image */}
                 <motion.div
-                    className="relative w-64 h-64 md:w-80 md:h-80 lg:w-[500px] lg:h-[500px] flex-shrink-0"
+                    className="relative w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-[500px] lg:h-[500px] mt-10 lg:mt-0 flex-shrink-0"
                     initial={{ opacity: 0, scale: 0.9 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}
@@ -75,13 +75,13 @@ export const ModernHero = () => {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay: 0.3 }}
                 >
-                    <span className="text-xs font-black uppercase tracking-[0.4em] text-gray-400 mb-6 block lg:inline-block">Premium Painting</span>
+                    <span className="text-[10px] md:text-xs font-black uppercase tracking-[0.4em] text-gray-400 mb-6 block lg:inline-block">Premium Painting</span>
 
-                    <h1 className="text-[clamp(4rem,12vw,12rem)] font-black tracking-tighter mb-8 lg:mb-10 text-black leading-[0.85] overflow-hidden">
-                        Painter<br />
+                    <h1 className="text-[clamp(3.5rem,12vw,12rem)] font-black tracking-tighter mb-6 lg:mb-10 text-black leading-[0.85] overflow-hidden">
+                        Painter<br className="hidden sm:block" />
                         <span className="text-yellow-500 uppercase">G</span>
                     </h1>
-                    <p className="text-xl md:text-2xl text-gray-500 font-light max-w-2xl mx-auto lg:mx-0 mb-12 leading-relaxed tracking-tight">
+                    <p className="text-lg sm:text-xl md:text-2xl text-gray-500 font-light max-w-2xl mx-auto lg:mx-0 mb-10 md:mb-12 leading-relaxed tracking-tight">
                         Transforming spaces with <span className="text-rose-500 font-semibold">vibrant colors</span>.
                         Elevating environments at the intersection of <span className="italic text-cyan-500">expert craftsmanship</span> and artistic design.
                     </p>

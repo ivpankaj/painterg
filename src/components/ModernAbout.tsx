@@ -10,8 +10,8 @@ export const ModernAbout = () => {
         <div className="min-h-screen bg-white text-black pb-32 overflow-hidden">
             <div className="max-w-7xl mx-auto px-6">
                 {/* Profile Architecture */}
-                <div className="flex flex-col lg:flex-row gap-24 items-center mb-60">
-                    <div className="flex-1">
+                <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-center mb-32 md:mb-60 mt-10 lg:mt-0">
+                    <div className="flex-1 w-full max-w-sm lg:max-w-none">
                         <motion.div
                             initial={{ opacity: 0, scale: 0.95 }}
                             whileInView={{ opacity: 1, scale: 1 }}
@@ -40,7 +40,7 @@ export const ModernAbout = () => {
                             transition={{ duration: 0.8 }}
                         >
                             <span className="text-xs font-black uppercase tracking-[0.4em] text-gray-400 mb-8 block">Our Story</span>
-                            <h2 className="text-6xl md:text-9xl font-black tracking-tighter mb-12 leading-none uppercase">
+                            <h2 className="text-[clamp(3.5rem,10vw,6rem)] md:text-9xl font-black tracking-tighter mb-8 md:mb-12 leading-none uppercase">
                                 PAINTER <br /> <span className="text-rose-500">G</span>
                             </h2>
 
@@ -50,7 +50,7 @@ export const ModernAbout = () => {
                                 with <span className="italic text-cyan-500">vibrant</span> color solutions.
                             </p>
 
-                            <div className="grid grid-cols-2 gap-y-12 gap-x-12">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-8 gap-x-12">
                                 <div className="space-y-3">
                                     <div className="flex items-center gap-3 text-black">
                                         <GraduationCap size={18} strokeWidth={2.5} />
@@ -88,22 +88,22 @@ export const ModernAbout = () => {
                 <div className="relative">
                     <div className="mb-20">
                         <span className="text-xs font-black uppercase tracking-[0.4em] text-gray-400 mb-6 block text-center">Our Journey</span>
-                        <h3 className="text-5xl md:text-8xl font-black text-center mb-8 tracking-tighter uppercase">
+                        <h3 className="text-4xl sm:text-5xl md:text-8xl font-black text-center mb-8 tracking-tighter uppercase">
                             COMPANY <br className="md:hidden" /> <span className="text-indigo-400">HISTORY</span>
                         </h3>
                         <div className="w-16 h-1 bg-black mx-auto rounded-full" />
                     </div>
 
-                    <div className="bg-gray-50/30 rounded-[64px] border border-black/[0.03] p-10 md:p-20 shadow-[0_40px_100px_rgba(0,0,0,0.01)]">
-                        <div className="max-w-4xl mx-auto space-y-10 text-center">
-                            <p className="text-2xl md:text-4xl font-light text-black leading-relaxed tracking-tight">
+                    <div className="bg-gray-50/30 rounded-[32px] md:rounded-[64px] border border-black/[0.03] p-6 sm:p-10 md:p-20 shadow-[0_40px_100px_rgba(0,0,0,0.01)]">
+                        <div className="max-w-4xl mx-auto space-y-8 md:space-y-10 text-center">
+                            <p className="text-xl sm:text-2xl md:text-4xl font-light text-black leading-relaxed tracking-tight">
                                 Founded in <span className="font-black text-rose-500">2019</span> by <span className="font-black text-black">Ram Jee Singh</span>,
                                 <span className="font-black text-indigo-400 uppercase"> PainterG</span> began with a simple mission: to bring life, color, and unparalleled craftsmanship to every wall we touch.
                             </p>
-                            <p className="text-xl md:text-2xl text-gray-500 font-light leading-relaxed tracking-tight">
+                            <p className="text-lg sm:text-xl md:text-2xl text-gray-500 font-light leading-relaxed tracking-tight">
                                 What started as a passionate local endeavor has blossomed into a premium painting service under the visionary leadership of our current Owner & CEO, <span className="font-black text-cyan-500">Roshan Singh</span>.
                             </p>
-                            <p className="text-lg md:text-xl text-gray-400 font-light leading-relaxed tracking-tight">
+                            <p className="text-base sm:text-lg md:text-xl text-gray-400 font-light leading-relaxed tracking-tight">
                                 Today, PainterG stands at the intersection of traditional painting expertise and modern aesthetic design. Whether it's a cozy home interior, a vast commercial complex, or intricately detailed custom murals, our commitment remains the same—delivering flawless finishes, enduring quality, and absolute vibrance.
                             </p>
                         </div>
