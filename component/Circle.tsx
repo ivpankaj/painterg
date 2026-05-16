@@ -6,33 +6,37 @@ import { ArrowRight } from "lucide-react";
 const steps = [
   {
     id: 1,
-    title: "Get In Touch\nWith XP",
+    title: "Get In Touch\nWith PainterG Experts",
     image:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1200&auto=format&fit=crop",
   },
+
   {
     id: 2,
     title: "Free\nConsultation",
     image:
-      "https://images.unsplash.com/photo-1556740749-887f6717d7e4?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200&auto=format&fit=crop",
   },
+
   {
     id: 3,
     title: "Painting Job\nStarts",
     image:
-      "https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1562259949-e8e7689d7828?q=80&w=1200&auto=format&fit=crop",
   },
+
   {
     id: 4,
     title: "Post-Painting\nClean-Up",
     image:
-      "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=1200&auto=format&fit=crop",
   },
+
   {
     id: 5,
     title: "On-Time Site\nHandover",
     image:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=1200&auto=format&fit=crop",
   },
 ];
 
@@ -42,7 +46,7 @@ export default function PaintingSteps() {
       <div className="mx-auto max-w-[1180px] px-4 sm:px-5 lg:px-6">
         {/* Heading */}
         <h2 className="text-center text-[24px] font-light leading-tight text-[#2d2d2d] md:text-[40px]">
-          Steps Involved In Berger Express Painting
+          What we can do for you , even more
         </h2>
 
         {/* Desktop Layout */}

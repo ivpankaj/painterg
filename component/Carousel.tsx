@@ -7,52 +7,52 @@ import { useRef } from "react";
 const testimonials = [
   {
     id: 1,
-    name: "Anurag Singh, Ghaziabad",
+    name: "Rohit Sharma, Gurugram",
     image:
       "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop",
     description:
-      "I chose Asian Paints Beautiful Homes Painting Services during COVID and the supervisor was very cooperative with us.",
+      "Painterg completely transformed our apartment with premium texture finishes and smooth wall painting. The team was professional, punctual and maintained complete cleanliness during the project.",
     featured: true,
   },
   {
     id: 2,
-    name: "Baljit Singh, Amritsar",
+    name: "Anjali Verma, Noida",
     image:
       "https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=1200&auto=format&fit=crop",
     description:
-      "The wallpaper suggestions and overall service quality were excellent and transformed our office beautifully.",
+      "The colour consultation provided by Painterg was amazing. Their experts helped us choose modern shades that made our home look luxurious and elegant.",
   },
   {
     id: 3,
-    name: "Jaison Jose, Kerala",
+    name: "Karan Mehta, Delhi",
     image:
       "https://images.unsplash.com/photo-1448630360428-65456885c650?q=80&w=1200&auto=format&fit=crop",
     description:
-      "We are very satisfied with the colour combinations and professional service provided by the team.",
+      "Very satisfied with the waterproofing and exterior painting service. The finish quality and professionalism exceeded our expectations.",
   },
   {
     id: 4,
-    name: "Rahul Verma, Delhi",
+    name: "Priya Malhotra, Faridabad",
     image:
       "https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1200&auto=format&fit=crop",
     description:
-      "The painters completed the project on time and maintained cleanliness throughout the work.",
+      "Painterg completed our office painting project before deadline and the results were outstanding. Highly recommended for commercial painting work.",
   },
   {
     id: 5,
-    name: "Amanpreet Kaur, Punjab",
+    name: "Amit Chauhan, Ghaziabad",
     image:
       "https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=1200&auto=format&fit=crop",
     description:
-      "Amazing experience with texture designs and colour consultation. Highly recommended service.",
+      "Loved the texture wall designs and premium finish. Their painters are highly skilled and the pricing was also very reasonable.",
   },
   {
     id: 6,
-    name: "Rohit Sharma, Mumbai",
+    name: "Neha Kapoor, South Delhi",
     image:
       "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop",
     description:
-      "The entire process from consultation to handover was smooth and professionally managed.",
+      "From free site inspection to final handover, the complete process was smooth and hassle-free. Painterg is one of the best painting services in Delhi NCR.",
   },
 ];
 
@@ -81,14 +81,14 @@ export default function TestimonialCarousel() {
           <div className="absolute right-0 hidden items-center gap-2 md:flex">
             <button
               onClick={() => scroll("left")}
-              className="flex h-9 w-9 items-center justify-center rounded-full border border-[#d9d9d9] bg-white transition hover:bg-[#4b1f8f] hover:text-white"
+              className="flex h-9 w-9 items-center justify-center rounded-full border border-[#d9d9d9] bg-white transition hover:bg-[#2FA084] hover:text-white"
             >
               <ChevronLeft size={18} />
             </button>
 
             <button
               onClick={() => scroll("right")}
-              className="flex h-9 w-9 items-center justify-center rounded-full border border-[#d9d9d9] bg-white transition hover:bg-[#4b1f8f] hover:text-white"
+              className="flex h-9 w-9 items-center justify-center rounded-full border border-[#d9d9d9] bg-white transition hover:bg-[#2FA084] hover:text-white"
             >
               <ChevronRight size={18} />
             </button>
@@ -105,7 +105,7 @@ export default function TestimonialCarousel() {
               key={item.id}
               className={`min-h-[430px] min-w-[280px] max-w-[280px] snap-start overflow-hidden md:min-w-[320px] md:max-w-[320px] ${
                 item.featured
-                  ? "bg-[#4b1f8f] text-white"
+                  ? "bg-[#2FA084] text-white"
                   : "bg-[#eeeeee] text-[#333]"
               }`}
             >
@@ -137,16 +137,7 @@ export default function TestimonialCarousel() {
                   {item.description}
                 </p>
 
-                {/* Bottom */}
-                {item.featured && (
-                  <div className="mt-auto flex items-center justify-end gap-2 pt-6">
-                    <button className="border-b border-white text-[12px] font-semibold tracking-wide">
-                      CLICK TO EXPAND
-                    </button>
-
-                    <Expand size={16} />
-                  </div>
-                )}
+         
               </div>
             </div>
           ))}
@@ -156,14 +147,14 @@ export default function TestimonialCarousel() {
         <div className="mt-6 flex items-center justify-center gap-3 md:hidden">
           <button
             onClick={() => scroll("left")}
-            className="flex h-9 w-9 items-center justify-center rounded-full border border-[#d9d9d9] bg-white transition hover:bg-[#4b1f8f] hover:text-white"
+            className="flex h-9 w-9 items-center justify-center rounded-full border border-[#d9d9d9] bg-white transition hover:bg-[#2FA084] hover:text-white"
           >
             <ChevronLeft size={18} />
           </button>
 
           <button
             onClick={() => scroll("right")}
-            className="flex h-9 w-9 items-center justify-center rounded-full border border-[#d9d9d9] bg-white transition hover:bg-[#4b1f8f] hover:text-white"
+            className="flex h-9 w-9 items-center justify-center rounded-full border border-[#d9d9d9] bg-white transition hover:bg-[#2FA084] hover:text-white"
           >
             <ChevronRight size={18} />
           </button>

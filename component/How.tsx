@@ -12,82 +12,117 @@ import {
 const steps = [
   {
     icon: Monitor,
-    title: "Schedule an appointment",
+    title: "Book Free Site Visit",
     description:
-      "Fill the form online and with your details, following which, you will receive a call from our customer care executive to schedule an appointment for our Asian Paints Beautiful Homes Painting Service.",
+      "Schedule a free inspection with Painterg and our team will connect with you for project discussion and site analysis.",
   },
+
   {
     icon: Presentation,
-    title: "Product & site consultation",
+    title: "Consultation & Estimation",
     description:
-      "Our Asian Paints Beautiful Homes Painting Service Associate will get in touch with you. The associate will assist with all your queries, and provide a product and site consultation.",
+      "Our experts provide detailed consultation, project planning and the best quotation based on your painting requirements.",
   },
+
   {
     icon: Palette,
-    title: "Selection of colour",
+    title: "Choose Colours & Texture",
     description:
-      "Asian Paints Beautiful Homes Painting Service offers a curated selection of our favourite beautiful homes painting colours for you to choose from. Our expert will help you finalize the colours.",
+      "Select from modern colour combinations, texture finishes and premium wall designs with expert guidance.",
   },
+
   {
     icon: Sofa,
-    title: "Work start day",
+    title: "Site Preparation",
     description:
-      "Post finalizing the colours, we prepare the site by laying plastic over the floors & furniture in the required space. Disinfection of the site is also carried out before the final handover.",
+      "Before painting starts, our team covers furniture and floors properly to maintain complete cleanliness and safety.",
   },
+
   {
     icon: Paintbrush,
-    title: "Site Execution",
+    title: "Professional Painting",
     description:
-      "We use a well-established execution process with a robust project management framework to ensure a high quality, on time execution of your home interior design!",
+      "Painterg painters execute the project using premium materials, modern tools and high-quality finishing techniques.",
   },
+
   {
     icon: Sparkles,
-    title: "Site handover",
+    title: "Final Handover",
     description:
-      "Once the site is ready, we do a post-painting clean-up & home disinfection service and will give you a walkthrough of how to take care of your walls.",
+      "After completion, we clean the site properly and ensure a smooth final handover with premium wall finishing.",
   },
 ];
 
 export default function HowItWorks() {
   return (
-    <section className="w-full bg-[#f5f5f5] py-10 md:py-14">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
+    <section className="w-full bg-[#EEEEEE] py-8 md:py-10">
+      <div className="mx-auto max-w-6xl px-4 sm:px-5 lg:px-6">
         {/* Heading */}
-        <h2 className="text-center text-[28px] font-bold text-black md:text-[40px]">
-          How it works?
-        </h2>
+        <div className="text-center">
+          <h2 className="text-[24px] font-black text-[#1E293B] md:text-[34px]">
+            How <span className="text-[#2FA084]">Painterg</span> Works
+          </h2>
+
+          <p className="mx-auto mt-3 max-w-2xl text-[14px] leading-[1.7] text-[#475569]">
+            Professional interior painting, exterior painting,
+            waterproofing and texture wall finishes across Delhi NCR
+            with modern tools and experienced painters.
+          </p>
+        </div>
 
         {/* Grid */}
-        <div className="mt-10 grid grid-cols-1 gap-y-10 sm:grid-cols-2 sm:gap-x-8 lg:mt-14 lg:grid-cols-3 lg:gap-x-12 lg:gap-y-14">
+        <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {steps.map((step, index) => {
             const Icon = step.icon;
 
             return (
               <div
                 key={index}
-                className="flex items-start gap-4"
+                className="rounded-[10px] border border-[#d7d7d7] bg-white p-5 transition-colors hover:border-[#2FA084]"
               >
-                {/* Icon */}
-                <div className="flex h-[52px] w-[52px] min-w-[52px] items-center justify-center">
-                  <Icon
-                    strokeWidth={1.6}
-                    className="h-[42px] w-[42px] text-[#7551A8]"
-                  />
+                {/* Top */}
+                <div className="flex items-center gap-3">
+                  {/* Icon */}
+                  <div className="flex h-[42px] w-[42px] min-w-[42px] items-center justify-center rounded-[8px] bg-[#1E293B]">
+                    <Icon
+                      strokeWidth={1.8}
+                      className="h-[20px] w-[20px] text-white"
+                    />
+                  </div>
+
+                  {/* Number */}
+                  <div className="text-[28px] font-black leading-none text-[#2FA084]">
+                    0{index + 1}
+                  </div>
                 </div>
 
                 {/* Content */}
-                <div>
-                  <h3 className="text-[20px] font-bold leading-snug text-[#2d2d2d]">
+                <div className="mt-4">
+                  <h3 className="text-[17px] font-bold leading-snug text-[#1E293B]">
                     {step.title}
                   </h3>
 
-                  <p className="mt-2 text-[15px] leading-[1.55] text-[#555]">
+                  <p className="mt-2 text-[13px] leading-[1.7] text-[#475569]">
                     {step.description}
                   </p>
                 </div>
               </div>
             );
           })}
+        </div>
+
+        {/* Buttons */}
+        <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+          <button className="h-[44px] rounded-[8px] bg-[#1E293B] px-5 text-[13px] font-bold text-white transition-colors hover:bg-[#2FA084]">
+            Get Free Quote
+          </button>
+
+          <a
+            href="tel:+917048976431"
+            className="flex h-[44px] items-center justify-center rounded-[8px] border border-[#1E293B] px-5 text-[13px] font-bold text-[#1E293B] transition-colors hover:bg-[#1E293B] hover:text-white"
+          >
+            Call Now
+          </a>
         </div>
       </div>
     </section>
